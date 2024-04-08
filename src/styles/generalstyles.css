@@ -53,6 +53,7 @@
     --option1-color: #D2F752; /* Color de fondo para opción 1 */
     --option2-color: #FF86D2; /* Color de fondo para opción 2 */
     --option3-color: #FF5E41; /* Color de fondo para opción 3 */
+    --background-container-color: #F9F4F0; /* Color de fondo para contenedor */
 
     /* Variables para button1 */
     --button1-border: 1px solid #000000; /* Borde para button1 */
@@ -73,6 +74,11 @@
     --button3-border-radius: 37px; /* Radio de borde para button3 */
     --button3-width: 452px; /* Ancho para button3 */
     --button3-height: 74px; /* Alto para button3 */
+
+    /* Variables para imagenes */
+    --image-width: 100%; /* Ancho para imagen */
+    --image-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Sombra para imagen */
+    --image-border: 1px solid #000000; /* Borde para imagen */
   }
 
 
@@ -174,4 +180,13 @@ p {
     color: var(--button3-color-text);
     font-weight: 700;
 }
+
+.bg-red {
+    background-color: red;
+  }
+  
+  .bg-black {
+    background-color: black;
+  }
+  
 
