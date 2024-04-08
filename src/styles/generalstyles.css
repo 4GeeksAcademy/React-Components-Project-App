@@ -40,8 +40,58 @@
     --paragraph-font-style: normal; /* Estilo de fuente para párrafos */
 
     /* Variables para color de texto */
-    --heading-color: #333; /* Color de texto para headings */
+    --heading-color-text: #333; /* Color de texto para headings */
+    --paragraph-color-text: #333; /* Color de texto para párrafos */
+    --error-color-text: #FF5E41; /* Color de texto para errores */
+    --button1-color-text: #000000; /* Color de texto para botón 1 */
+    --button3-color-text: #F9F4F0; /* Color de texto para botón 3 */
+
+    /* Variables para color de fondo */
+    --button1-color-background: #FF5E41; /* Color de fondo para botón 1 */
+    --button2-color-background: #F9F4F0; /* Color de fondo para botón 2 */
+    --button3-color-background: #000000; /* Color de fondo para botón 3 */  
+    --option1-color: #D2F752; /* Color de fondo para opción 1 */
+    --option2-color: #FF86D2; /* Color de fondo para opción 2 */
+    --option3-color: #FF5E41; /* Color de fondo para opción 3 */
+
+    /* Variables para button1 */
+    --button1-border: 1px solid #000000; /* Borde para button1 */
+    --button1-box-shadow: 7px 7px 0px 0px #000; /* Sombra para button1 */
+    --button1-box-sizing: border-box; /* Box-sizing para button1 */
+    --button1-width: 450px; /* Ancho para button1 */
+    --button1-height: 116px; /* Alto para button1 */
+
+    /* Variables para button2 */
+    --button2-border: 1px solid #000000; /* Borde para button2 */
+    --button2-box-shadow: 7px 7px 0px 0px #000; /* Sombra para button2 */
+    --button2-box-sizing: border-box; /* Box-sizing para button2 */
+    --button2-width: 128px; /* Ancho para button2 */
+    --button2-height: 132px; /* Alto para button2 */
+
+    /* Variables para button3 */
+    --button3-border: 1px solid #979797; /* Borde para button3 */
+    --button3-border-radius: 37px; /* Radio de borde para button3 */
+    --button3-width: 452px; /* Ancho para button3 */
+    --button3-height: 74px; /* Alto para button3 */
   }
+
+
+  /* Media queries para ajustes adicionales */
+@media (max-width: 768px) {
+    :root {
+        --heading1-font-size: 30px;
+        --heading2-font-size: 25px;
+        --heading3-font-size: 20px;
+        --heading4-font-size: 18px;
+        --heading5-font-size: 16px;
+        --heading6-font-size: 14px;
+        --paragraph-font-size: 14px;
+        --button1-width: 80%;
+        --button2-width: 100px;
+        --button3-width: 80%;
+    }
+}
+
 
 h1 {
     font-family: var(--heading1-font-family);
@@ -90,15 +140,38 @@ p {
     font-style: var(--paragraph-font-style);
     color: var(--heading-color);
     position: relative;
-    width: 450px;
-    height: 116px;
-    background: #FF5E41;
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    box-shadow: 7px 7px 0px 0px #000;
+    width: var(--button1-width);
+    height: var(--button1-height);
+    background: var(--button1-color-background);
+    border: var(--button1-border);
+    box-sizing: var(--button1-border-box);
+    box-shadow: var(--button1-box-shadow);
     font-weight: 700;
-    font-family: var(--paragraph-font-family);
     
 }
 
+.button2{
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font-family);
+    border: var(--button2-border);
+    box-shadow: var(--button2-box-shadow);
+    box-sizing: var(--button2-border-box);
+    width: var(--button2-width);
+    height: var(--button2-height);
+    background: var(--button2-color-background);
+    color: var(--button2-color-text);
+    font-weight: 700;
+}
+
+.button3{
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font-family);
+    border: var(--button3-border);
+    border-radius: var(--button3-border-radius);
+    width: var(--button3-width);
+    height: var(--button3-height);
+    background: var(--button3-color-background);
+    color: var(--button3-color-text);
+    font-weight: 700;
+}
 
