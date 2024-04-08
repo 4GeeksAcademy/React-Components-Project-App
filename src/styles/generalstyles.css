@@ -1,0 +1,104 @@
+:root {
+    /* Variables para h1 */
+    --heading1-font-size: 80px; /* Tamaño de fuente para h1 */ 
+    --heading1-font-family: 'Taviraj'; /* Fuente para h1 */
+    --heading1-font-weight: 300; /* Peso de fuente para h1 */
+    --heading1-font-style: italic; /* Estilo de fuente para h1 */
+    --heading1-line-height: 136px; /* Altura de línea para h1 */
+    --heading1-letter-spacing: 0.08px; /* Espaciado de letra para h1 */   
+
+    /* Variables para h2 */
+    --heading2-font-size:  60px; /* Tamaño de fuente para h2 */
+    --heading2-font-family: 'Helvetica'; /* Fuente para h2 */
+    --heading2-font-style: normal; /* Estilo de fuente para h2 */
+    --heading2-line-height: 51px; /* Altura de línea para h2 */
+    --heading2-letter-spacing: 0.04px; /* Espaciado de letra para h2 */
+
+    /* Variables para h3 */
+    --heading3-font-size:  50px; /* Tamaño de fuente para h3 */ 
+
+    /* Variables para h4 */
+    --heading4-font-size:  40px; /* Tamaño de fuente para h4 */
+
+    /* Variables para h5 */
+    --heading5-font-size:  30px; /* Tamaño de fuente para h5 */
+
+    /* Variables para h6 */
+    --heading6-font-size:  25px; /* Tamaño de fuente para h6 */
+    --heading6-font-family: 'Helvetica regular'; /* Fuente para h6 */
+    --heading6-font-weight: 200; /* Peso de fuente para h6 */
+
+    /* Variables globales para headings */
+    --heading-font-weight: 700; /* Peso de fuente para headings */
+
+    /* Variables globales para párrafos */
+    --paragraph-font-size: 22px; /* Tamaño de fuente para párrafos */
+    --paragraph-font-family: 'Space Grotesk'; /* Fuente para párrafos */
+    --paragraph-font-weight: 300; /* Peso de fuente para párrafos */
+    --paragraph-line-height: 28px; /* Altura de línea para párrafos */
+    --paragraph-letter-spacing: 0.022px; /* Espaciado de letra para párrafos */
+    --paragraph-font-style: normal; /* Estilo de fuente para párrafos */
+
+    /* Variables para color de texto */
+    --heading-color: #333; /* Color de texto para headings */
+  }
+
+h1 {
+    font-family: var(--heading1-font-family);
+    font-size: var(--heading1-font-size); 
+    color: var(--heading-color); 
+    font-weight: var(--heading1-font-weight); 
+    font-style: var(--heading1-font-style); 
+    line-height: var(--heading1-line-height); 
+    letter-spacing: var(--heading1-letter-spacing); 
+}
+
+
+h2 {
+    font-family: var(--heading2-font-family);
+    font-size: var(--heading2-font-size);
+    color: var(--heading-color-);
+    font-weight: var(--heading-font-weight);
+    font-style: var(--heading2-font-style);
+    line-height: var(--heading2-line-height);
+    letter-spacing: var(--heading2-letter-spacing);
+}
+
+h6 {
+    font-family: var(--heading6-font-family);
+    font-size: var(--heading6-font-size);
+    color: var(--heading-color);
+    font-weight: var(--heading6-font-weight);
+}
+
+p {
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font-family);
+    font-weight: var(--paragraph-font-weight);
+    line-height: var(--paragraph-line-height);
+    letter-spacing: var(--paragraph-letter-spacing);
+    font-style: var(--paragraph-font-style);
+    color: var(--heading-color);
+}
+
+.button1{
+    font-size: var(--paragraph-font-size);
+    font-family: var(--paragraph-font-family);
+    font-weight: var(--paragraph-font-weight);
+    line-height: var(--paragraph-line-height);
+    letter-spacing: var(--paragraph-letter-spacing);
+    font-style: var(--paragraph-font-style);
+    color: var(--heading-color);
+    position: relative;
+    width: 450px;
+    height: 116px;
+    background: #FF5E41;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 0px 0px #000;
+    font-weight: 700;
+    font-family: var(--paragraph-font-family);
+    
+}
+
+
