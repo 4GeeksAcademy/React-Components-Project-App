@@ -63,10 +63,21 @@
   height: 25rem;
 }
 
-.button-second-container-landingpage{
+.button-second-container-landingpage {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -12rem; /* Ajustar la posición del botón desde la parte inferior del contenedor */
+    bottom: -20px; /* Ajustar la distancia desde la parte inferior del contenedor */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar para centrar horizontalmente */
     z-index: 1; /* Asegurar que el botón esté por encima del contenido */
+    width: fit-content; /* Ajustar el ancho del contenedor al contenido */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .button-second-container-landingpage {
+      width: 100%; /* Ajustar el ancho al 100% en dispositivos móviles */
+      position: static; /* Cambiar a posición estática en dispositivos móviles */
+      text-align: center; /* Centrar el texto del botón en dispositivos móviles */
+      margin-top: 20px; /* Agregar margen superior en dispositivos móviles */
+    }
   }

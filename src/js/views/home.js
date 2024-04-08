@@ -34,9 +34,9 @@ export const Home = () => {
 			<Row className="align-items-center">
 				<Col xs={12} md={6} lg={3} xl={12} className="text-center">
 					<h1>Donde los sentimientos <br/>se comparten</h1>
-					<p>En nuestra comunidad encontrarás un espacio seguro donde compartir tus emociones y experiencias. Lorem ipsum seguro donde compartir tus emociones y experiencias. Lorem ipsum
-					seguro donde compartir tus emociones y experiencias. Lorem ipsumseguro donde compartir tus emociones y experiencias. Lorem ipsum
-					seguro donde compartir tus emociones y experiencias. Lorem ipsumseguro donde compartir tus emociones y experiencias. Lorem ipsum
+					<p>Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida. 
+						Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social; 
+						es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
 					 <br/>¡Únete a la comunidad!</p>
 					<button className="button1 button-second-container-landingpage"> Crear Usuario</button>
 				</Col>

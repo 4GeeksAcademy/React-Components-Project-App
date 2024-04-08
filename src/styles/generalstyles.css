@@ -1,15 +1,12 @@
 :root {
-    /* Variables para h1 */
-    --heading1-font-size: 80px; /* Tamaño de fuente para h1 */ 
+    /* Variables para texto */
     --heading1-font-family: 'Taviraj'; /* Fuente para h1 */
-    --heading1-font-weight: 300; /* Peso de fuente para h1 */
-    --heading1-font-style: italic; /* Estilo de fuente para h1 */
-    --heading1-line-height: 136px; /* Altura de línea para h1 */
-    --heading1-letter-spacing: 0.08px; /* Espaciado de letra para h1 */   
+    --base-font-family: 'Space Grotesk'; /* Fuente para párrafos */
+     
 
     /* Variables para h2 */
     --heading2-font-size:  60px; /* Tamaño de fuente para h2 */
-    --heading2-font-family: 'Helvetica'; /* Fuente para h2 */
+    /* --heading2-font-family: 'Helvetica'; Fuente para h2 */
     --heading2-font-style: normal; /* Estilo de fuente para h2 */
     --heading2-line-height: 51px; /* Altura de línea para h2 */
     --heading2-letter-spacing: 0.04px; /* Espaciado de letra para h2 */
@@ -24,8 +21,7 @@
     --heading5-font-size:  30px; /* Tamaño de fuente para h5 */
 
     /* Variables para h6 */
-    --heading6-font-size:  25px; /* Tamaño de fuente para h6 */
-    --heading6-font-family: 'Helvetica regular'; /* Fuente para h6 */
+    --heading6-font-size:  25px; 
     --heading6-font-weight: 200; /* Peso de fuente para h6 */
 
     /* Variables globales para headings */
@@ -33,7 +29,7 @@
 
     /* Variables globales para párrafos */
     --paragraph-font-size: 22px; /* Tamaño de fuente para párrafos */
-    --paragraph-font-family: 'Space Grotesk'; /* Fuente para párrafos */
+    --base-font-family: 'Space Grotesk'; /* Fuente para párrafos */
     --paragraph-font-weight: 300; /* Peso de fuente para párrafos */
     --paragraph-line-height: 28px; /* Altura de línea para párrafos */
     --paragraph-letter-spacing: 0.022px; /* Espaciado de letra para párrafos */
@@ -100,13 +96,13 @@
 
 
 h1 {
-    font-family: var(--heading1-font-family);
+    font-family: 80px;
     font-size: var(--heading1-font-size); 
     color: var(--heading-color); 
-    font-weight: var(--heading1-font-weight); 
-    font-style: var(--heading1-font-style); 
-    line-height: var(--heading1-line-height); 
-    letter-spacing: var(--heading1-letter-spacing); 
+    font-weight: 300;
+    font-style: italic;
+    line-height: 136px;
+    letter-spacing: 0.08px;
 }
 
 
