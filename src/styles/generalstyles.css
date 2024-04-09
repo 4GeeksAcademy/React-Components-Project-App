@@ -12,8 +12,8 @@
     --option5-color: #000000; /* Color de fondo para opción 5 */
     --option6-color: #FAB6DB; /* Color de fondo para opción 6 */
 
-    /* Variables sombras button */
-    --button1-border: 1px solid #000000; /* Borde para button1 */
+    /* Variables sombras button / button 2 mainbutton */
+    --button1-border: 1px solid #000000; /* Borde para button1 */ 
     --button1-box-shadow: 7px 7px 0px 0px #000; /* Sombra para button1 */
     --button1-box-sizing: border-box; /* Box-sizing para button1 */
   

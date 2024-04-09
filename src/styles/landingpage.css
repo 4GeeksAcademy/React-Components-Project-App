@@ -1,52 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @media (min-width: 768px) {
-    .image-top-left-container1,
-    .image-bottom-left-container1,
-    .image-top-right-container1,
-    .image-bottom-right-container1 {
-      margin: 0 auto 10px;
-      
-    }
+  /* Estilos específicos para pantallas medianas y más grandes (tablets y desktops) */
+  .image-bottom-left-container1 {
+    margin-left: 5%; /* Ajusta el margen izquierdo en pantallas más grandes */
   }
 
-  
-  .container-landingpage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--option4-color);
-    border: 1px solid #020202;
-    padding: 20px; /* Ajusta el relleno según sea necesario */
-    box-sizing: border-box; /* Incluye el borde y el relleno en el tamaño total */
+  .image-bottom-right-container1 {
+    margin-right: 5%; /* Ajusta el margen derecho en pantallas más grandes */
+  }
+}
+ 
+.container-landingpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--option4-color);
+  border: 1px solid #020202;
+  box-sizing: border-box;
+  padding: 20px; /* Añade relleno para separar el contenido del borde */
+ 
 }
 
 .container-landingpage img {
-    width: 60%; /* Ocupa el ancho completo del contenedor */
-    height: auto; /* Altura automática para mantener la proporción */
-    display: block; /* Mostrar como bloque */
-    margin-bottom: 20px; /* Margen inferior entre las imágenes */
-    margin-top: 10px; /* Margen superior entre las imágenes */
+  display: block; /* Cambia a 'block' para eliminar espacios innecesarios */
+  margin-bottom: 3%;
+  margin-top: 2%;
+  width: 100%; /* Haz que las imágenes ocupen todo el ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
   }
 
-.image-top-left-container1, .image-top-right-container1{
-  object-fit: cover;
-  box-shadow: var(--image-box-shadow);
-}
 
-.image-bottom-left-container1{
+
+  .image-top-left-container1,
+  .image-top-right-container1,
+  .image-bottom-left-container1,
+  .image-bottom-right-container1 {
+    object-fit: cover;
+    box-shadow: var(--image-box-shadow);
+    width: 100%; /* Ajusta el ancho al 100% para ocupar todo el espacio disponible */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    
+  }
+
+.image-top-left-container1{
   object-fit: cover;
   box-shadow: var(--image-box-shadow);
-  margin-left: 5rem;
   
 }
 
+.image-top-right-container1{
+  object-fit: contain;
+  box-shadow: var(--image-box-shadow);
+  flex-shrink: 0;
+  margin-right: 20%;
+}
+
+
+.image-bottom-left-container1{
+  object-fit: contain;
+  box-shadow: var(--image-box-shadow);
+  margin-left: 10rem;
+  flex-shrink: 0;
+}
+
 .image-bottom-right-container1 {
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: var(--image-box-shadow);
   margin-right: 5rem;
- 
+  flex-shrink: 0;
 }
 
 /* second container */
@@ -58,15 +81,16 @@
   height: auto;
   position: relative;
   width: 100%;
+  margin-top: 5%;
 }
 
 .button-second-container-landingpage {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    z-index: 1; 
-    width: 450px; 
-    height: 116px;
-  }
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 1; 
+  width: 450px; 
+  height: 116px;
+}
 
   /* third container  */
 
@@ -121,6 +145,25 @@
 } 
 
 
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
 
 
 
