@@ -1,9 +1,11 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/generalstyles.css";
+import "../../styles/landingpage.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import "../../styles/landingpage.css";
+
+
 
 
 
@@ -11,44 +13,58 @@ export const Home = () => {
 
 	return (
 
-	<Container fluid className="container-landingpage container">
+		<Container fluid className="container-landingpage container">
 
-		<Container>
-			<Row className="align-items-center">
-				<Col xs={12} md={3} className="text-center">
-					<img src={rigoImage} alt="Image 1" className="image-top-left-container1" />
-					<img src={rigoImage} alt="Image 2" className="image-bottom-left-container1" />
-				</Col>
-				<Col xs={12} md={6} className="bg-white text-center">
-					<h1>Bienvenidxs a</h1>
-					<h2>la Comunidad <br />de Apoyo <br />Emocional</h2>
-				</Col>
-				<Col xs={12} md={3} className="text-center">
-					<img src={rigoImage} alt="Image 3" className="image-top-right-container1" />
-					<img src={rigoImage} alt="Image 4" className="image-bottom-right-container1" />
-				</Col>
-			</Row>
+			<Container>
+				<Row className="align-items-center">
+					<Col xs={1} md={3} className="text-center">
+						<img src={rigoImage} alt="Image 1" className="image-top-left-container1" />
+						<img src={rigoImage} alt="Image 2" className="image-bottom-left-container1" />
+					</Col>
+					<Col xs={10} md={6} className="text-center">
+						<h1 className="heading1">Bienvenidxs a</h1>
+						<h2 className="heading2">la Comunidad <br />de Apoyo <br />Emocional</h2>
+					</Col>
+					<Col xs={1} md={3} className="text-center">
+						<img src={rigoImage} alt="Image 3" className="image-top-right-container1" />
+						<img src={rigoImage} alt="Image 4" className="image-bottom-right-container1" />
+					</Col>
+				</Row>
+			</Container>
+
+			<Container fluid className="second-container-landingpage">
+				<Row className="text-center">
+					<Col xs={12}>
+						<h1 className="heading1">Donde los <span className="heading2">sentimientos</span><br /> se <span className="heading2">comparten</span></h1>
+						<p className="base-paragrahp">Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida.
+							Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social;
+							es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
+						</p> <br /><br />
+						<button className="button1 button-second-container-landingpage"> Únete a Mymood ¡hoy!</button>
+					</Col>
+				</Row>
+			</Container>
+
+			<Container fluid className="third-container-landingpage">
+				<Row className="text-left">
+					<Col xs={12} md={6}>
+						<h1 className="heading-thirdcontainer">Define tu estado con MyMood </h1>
+						<p className="base-paragrahp">Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida.
+							Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social;
+							es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
+						</p> <br /><br />
+					</Col>
+					<Col xs={12} md={6}>
+						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage" />	
+					</Col>
+				</Row>
+			</Container>
+
+
+
+
 		</Container>
 
-		<Container className="container-fluid second-container-landingpage">
-			<Row className="align-items-center">
-				<Col xs={12} md={6} lg={3} xl={12} className="text-center">
-					<h1>Donde los sentimientos <br/>se comparten</h1>
-					<p>Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida. 
-						Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social; 
-						es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
-					 <br/>¡Únete a la comunidad!</p>
-					<button className="button1 button-second-container-landingpage"> Crear Usuario</button>
-				</Col>
-			</Row>
-		</Container>
-
-
-
-
-
-	</Container>
-		
 	);
 }
 		  
