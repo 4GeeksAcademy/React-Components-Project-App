@@ -46,19 +46,76 @@ export const Home = () => {
 			</Container>
 
 			<Container fluid className="third-container-landingpage">
-				<Row className="text-left">
-					<Col xs={12} md={6}>
+				<Row >
+					<Col xs={12} md={8} className="text-left">
 						<h1 className="heading-thirdcontainer">Define tu estado con MyMood </h1>
 						<p className="base-paragrahp">Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida.
 							Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social;
 							es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
 						</p> <br /><br />
 					</Col>
-					<Col xs={12} md={6}>
-						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage" />	
+					<Col xs={12} md={4} className="d-flex justify-content-center align-items-center" s >
+						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage"/>	
 					</Col>
 				</Row>
 			</Container>
+
+
+			<Container fluid className="fourth-container-landingpage">
+				<Row >
+					
+					<Col xs={12} md={3} className="d-flex justify-content-center align-items-center" s >
+						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage"/>	
+					</Col>
+
+					<Col xs={12} md={7} className="text-left">
+						<h1 className="heading-fourth-container">Tu recorrido emocional es nuestro compromiso:</h1>
+						<p className="base-paragrahp">MyMood te permite llevar un diario emocional para visualizar tu evolución. 
+						¿Buscas apoyo? Conéctate con expertos en salud mental de forma discreta. 
+						Cada paso hacia la comprensión de tus emociones es un paso hacia tu felicidad.
+						</p> <br /><br />
+					</Col>
+
+					<Col xs={12} md={2} className="d-flex justify-content-center align-items-center" s >
+						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage"/>	
+					</Col>
+
+				</Row>
+			</Container>
+
+
+			<Container fluid className="fiveth-container-landingpage">
+				<Row >
+					<Col xs={12} md={8} className="text-left">
+						<h1 className="heading-thirdcontainer">Unidos en la diversidad emocional </h1>
+						<p className="base-paragrahp">MyMood te permite llevar un diario emocional para visualizar tu evolución. 
+						¿Buscas apoyo? Conéctate con expertos en salud mental de forma discreta. 
+						Cada paso hacia la comprensión de tus emociones es un paso hacia tu felicidad.
+						</p> <br /><br />
+					</Col>
+					<Col xs={12} md={4} className="d-flex justify-content-center align-items-center" s >
+						<img src={rigoImage} alt="Image 5" className="image-third-container-landingpage"/>	
+					</Col>
+				</Row>
+			</Container>
+
+
+			<Container fluid className="sixth-container-landingpage">
+				<Row className="text-center">
+					<Col xs={12}>
+						<h1 className="heading1 heading6-container-landing-page">Conexión <span className="heading2">profesional</span><br /> al alcance <span className="heading2">de tus manos</span></h1>
+						<p className="base-paragrahp">Descubre, Conéctate, Comparte. En MyMood, creemos en el poder de la conexión y el apoyo mutuo para navegar por los altibajos emocionales de la vida.
+							Diseñada pensando en la juventud, nuestra plataforma es más que una simple red social;
+							es un refugio seguro donde puedes expresar tus emociones, encontrar comprensión y acceder a recursos que enriquecen tu bienestar mental.
+						</p> <br /><br />
+						<button className="button-sixth-container-landingpage"> Únete a Mymood ¡hoy!</button>
+					</Col>
+					
+				</Row>
+			</Container>
+
+
+
 
 
 
