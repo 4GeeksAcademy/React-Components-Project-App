@@ -28,6 +28,11 @@
     --image-border: 1px solid #000000; /* Borde para imagen */
   }
 
+html,
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
 
 
 .heading1 {
@@ -75,20 +80,30 @@
         
 }
 
-/* .button2{
-    font-size: var(--paragraph-font-size);
+#scrollToTopBtn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--button2-color-background); /* Color de fondo predeterminado */
+    color: #000; /* Color de texto */
+    font-size: 24px;
     font-family: var(--base-font-family);
-    border: var(--button1-border);
-    box-shadow: var(--button1-box-shadow);
-    box-sizing: var(--button1-border-box);
-    width: 128px;
-    height: 132px;
-    background: var(--button2-color-background);
-    color: var(--option4-color);
     font-weight: 700;
+    cursor: pointer;
+    z-index: 9999; /* Ajusta según sea necesario */
 }
 
-.button3{
+#scrollToTopBtn:hover {
+    background-color: #0056b3; /* Cambio de color en el estado hover */
+}
+
+  
+
+/* .button3{
     font-size: var(--paragraph-font-size);
     font-family: var(--base-font-family);
     border: var(--button3-border);
@@ -98,7 +113,7 @@
     background: var(--button3-color-background);
     color: var(--button3-color-text);
     font-weight: 700;
-}
+} */
 
- */
+
 
