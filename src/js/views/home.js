@@ -4,6 +4,7 @@ import Map from '../component/Map.js'; // Ajusta la ruta según la ubicación de
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import customIconUrl from '../../img/angry.png'; // Ajusta la ruta según la ubicación de tu icono personalizado
+import ScrollToTop from "react-scroll-to-top";
 
 
 export const Home = () => {
@@ -57,10 +58,9 @@ export const Home = () => {
 		  map.remove();
 		};
 	  }, []); // Ejecutar solo una vez al montar el componente
-	
-	  return <div id="map" style={{ height: '400px', width: '100%' }}></div>;
-	};
 
+	  return <div id="map" style={{ height: '1000px', width: '80%' }}>  <ScrollToTop smooth style={{height: "50px", background:"red"}} /></div>;
+	};
 
 
 

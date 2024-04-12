@@ -285,25 +285,24 @@
 
 
 
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 9999;
-  width: 50px;
-  height: 50px;
-  font-size: 24px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
+.scrollToTopBtn {
+  position: fixed !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  z-index: 9999 !important;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 24px !important;
+  background-color: #007bff !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
 }
 
-#scrollToTopBtn:hover {
-  background-color: #0056b3;
+.scrollToTopBtn:hover {
+  background-color: #0056b3 !important;
 }
-
 
 
 
