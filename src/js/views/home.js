@@ -5,22 +5,47 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import customIconUrl from '../../img/angry.png'; // Ajusta la ruta según la ubicación de tu icono personalizado
 
+
 export const Home = () => {
+	
 	useEffect(() => {
 		// Configurar el mapa
 		const map = L.map('map').setView([51.505, -0.09], 13);
 	
-		// Configurar el ícono personalizado
-		const customIcon = L.icon({
-		  iconUrl: customIconUrl,
-		  iconSize: [40, 40],
-		  iconAnchor: [20, 40]
-		});
-	
-		// Agregar marcador con ícono personalizado al mapa
-		L.marker([51.505, -0.09], { icon: customIcon })
-		  .bindPopup('Marcador con ícono personalizado')
-		  .addTo(map);
+		const users = [
+			{ icon: L.icon({
+				iconUrl: customIconUrl,
+				iconSize: [40, 40],
+				iconAnchor: [20, 40]
+			  }),
+			lat : 51.505,
+			long : -0.08,
+			}, 
+
+			{ icon: L.icon({
+				iconUrl: customIconUrl,
+				iconSize: [40, 40],
+				iconAnchor: [20, 40]
+			  }),
+			  lat : 51.405,
+			  long : -0.07,
+			}, 
+			
+			{ icon: L.icon({
+			iconUrl: customIconUrl,
+			iconSize: [40, 40],
+			iconAnchor: [20, 40]
+				}),
+				lat: 51.305,
+				long: -0.07,
+			}
+		]
+
+		// // Agregar marcador con ícono personalizado al mapa
+		users.map((user) => { 
+			return L.marker([user.lat, user.long], { icon: user.icon }).bindPopup('Marcador con ícono personalizado').addTo(map) });
+
+
 		
 		// Agregar capa de azulejos (tiles) de OpenStreetMap al mapa
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
