@@ -28,12 +28,6 @@
     --image-border: 1px solid #000000; /* Borde para imagen */
   }
 
-html,
-body{
-    overflow-x: hidden;
-    width: 100%;
-}
-
 
 .heading1 {
     font-family: var(--heading1-font-family);
